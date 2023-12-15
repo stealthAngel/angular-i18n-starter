@@ -1,7 +1,6 @@
-<!-- app.component.html -->
 <div>
   <label for="language-select">Select Language:</label>
-  <select id="language-select" (change)="changeLanguage($event)">
+  <select id="language-select" [(ngModel)]="selectedLanguage">
     <option value="en">English</option>
     <option value="nl">Dutch</option>
     <option value="es">Spanish</option>

@@ -1,31 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { Inject, LOCALE_ID } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { LanguageService } from './servies/language.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = $localize`:@@ANGULAR_APP_PERSONDETAILS:person details`;
+export class AppComponent implements OnInit {
+  title: string = '';
+  selectedLanguage: string = 'en';
 
-  constructor(
-    @Inject(DOCUMENT) private document: Document,
-    @Inject(LOCALE_ID) private locale: string
-  ) {}
+  constructor(private languageService: LanguageService) {}
 
-  changeLanguage(event: any) {
-    const currentUrl = this.document.location.href;
+  ngOnInit(): void {
+    this.languageService.selectedLanguage$.subscribe((language) => {
+      this.selectedLanguage = language;
+    });
 
-    const newLocale = event.target.value;
-
-    const newUrl = currentUrl.replace(`/${this.locale}/`, `/${newLocale}/`);
-
-    // Navigate to the new URL
-    this.document.location.href = newUrl;
+    const name = 'John Doe';
+    this.title = $localize`:@@ANGULAR_APP_PERSONDETAILS:person details ${name}`;
   }
 }
