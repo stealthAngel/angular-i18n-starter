@@ -1,0 +1,12 @@
+{
+  "locale": "es",
+  "translations": {
+    "ANGULAR_APP_PERSONDETAILS": "Detalles Personales",
+    "ANGULAR_APP_FULLNAME": "Nombre Completo:",
+    "ANGULAR_APP_JOHNDOE": " Juan Pérez",
+    "ANGULAR_APP_ADDRESS": "Dirección:",
+    "ANGULAR_APP_123MAINSTREETCITYCOUNTRY": " 123 Calle Principal, Ciudad, País",
+    "ANGULAR_APP_BIRTHDATE": "Fecha de Nacimiento:",
+    "ANGULAR_APP_JANUARY11990": " 1 de enero de 1990"
+  }
+}

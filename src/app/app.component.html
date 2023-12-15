@@ -1,0 +1,20 @@
+<!-- app.component.html -->
+<div>
+  <label for="language-select">Select Language:</label>
+  <select id="language-select" (change)="changeLanguage($event)">
+    <option value="en">English</option>
+    <option value="nl">Dutch</option>
+    <option value="es">Spanish</option>
+  </select>
+</div>
+
+<div class="card">
+  <h1>{{title}}</h1>
+  <h2 i18n="@@ANGULAR_APP_PERSONDETAILS">Person Details</h2>
+  <p><strong i18n="@@ANGULAR_APP_FULLNAME">Full Name:</strong><ng-container i18n="@@ANGULAR_APP_JOHNDOE"> John
+      Doe</ng-container></p>
+  <p><strong i18n="@@ANGULAR_APP_ADDRESS">Address:</strong><ng-container i18n="@@ANGULAR_APP_123MAINSTREETCITYCOUNTRY">
+      123 Main Street, City, Country</ng-container></p>
+  <p><strong i18n="@@ANGULAR_APP_BIRTHDATE">Birthdate:</strong><ng-container i18n="@@ANGULAR_APP_JANUARY11990"> January
+      1, 1990</ng-container></p>
+</div>

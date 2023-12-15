@@ -1,0 +1,12 @@
+{
+  "locale": "nl",
+  "translations": {
+    "ANGULAR_APP_PERSONDETAILS": "Persoonlijke Gegevens",
+    "ANGULAR_APP_FULLNAME": "Volledige Naam:",
+    "ANGULAR_APP_JOHNDOE": " Jan Jansen",
+    "ANGULAR_APP_ADDRESS": "Adres:",
+    "ANGULAR_APP_123MAINSTREETCITYCOUNTRY": " 123 Hoofdstraat, Stad, Land",
+    "ANGULAR_APP_BIRTHDATE": "Geboortedatum:",
+    "ANGULAR_APP_JANUARY11990": " 1 januari 1990"
+  }
+}

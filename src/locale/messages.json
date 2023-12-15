@@ -1,0 +1,12 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "ANGULAR_APP_PERSONDETAILS": "Person Details",
+    "ANGULAR_APP_FULLNAME": "Full Name:",
+    "ANGULAR_APP_JOHNDOE": " John Doe",
+    "ANGULAR_APP_ADDRESS": "Address:",
+    "ANGULAR_APP_123MAINSTREETCITYCOUNTRY": " 123 Main Street, City, Country",
+    "ANGULAR_APP_BIRTHDATE": "Birthdate:",
+    "ANGULAR_APP_JANUARY11990": " January 1, 1990"
+  }
+}
