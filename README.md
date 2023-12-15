@@ -1,7 +1,7 @@
 
 # Angular Internationalization (i18n) Setup Guide
 
-This github project is a sample project to show you how you can have multiple langauges in angular using .json files
+This github project is a sample project to show you how you can have multiple languages in angular using .json files
 
 if you want to apply the i18n stuff in your own application follow the steps below.
 
