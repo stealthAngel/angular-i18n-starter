@@ -38,6 +38,12 @@ and add below this:
 Next, add configurations for the Dutch ("nl") and Spanish ("es") locales in the `"architect"` section:
 
 ```json
+"development": {
+    "optimization": false,
+    "extractLicenses": false,
+    "sourceMap": true,
+    "localize": ["en"]
+  },
 "nl": {
   "optimization": false,
   "extractLicenses": false,
