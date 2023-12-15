@@ -1,9 +1,16 @@
 
 # Angular Internationalization (i18n) Setup Guide
 
-This github project is a sample project to show you how you can have multiple langauges in angular using .json files
+This github project is a sample project to show you how you can have multiple languages in angular using .json files
 
-if you want to apply the i18n stuff in your own application follow the steps below.
+to run this app simply do:
+
+```bash
+npm i 
+npm start
+```
+
+if you want to apply the i18n stuff in **your own application** follow the steps below.
 
 ## Step 1: Install Dependencies
 
@@ -38,6 +45,12 @@ and add below this:
 Next, add configurations for the Dutch ("nl") and Spanish ("es") locales in the `"architect"` section:
 
 ```json
+"development": {
+    "optimization": false,
+    "extractLicenses": false,
+    "sourceMap": true,
+    "localize": ["en"]
+  },
 "nl": {
   "optimization": false,
   "extractLicenses": false,
