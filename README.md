@@ -3,7 +3,14 @@
 
 This github project is a sample project to show you how you can have multiple languages in angular using .json files
 
-if you want to apply the i18n stuff in your own application follow the steps below.
+to run this app simply do:
+
+```bash
+npm i 
+npm start
+```
+
+if you want to apply the i18n stuff in **your own application** follow the steps below.
 
 ## Step 1: Install Dependencies
 
