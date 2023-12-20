@@ -1,6 +1,7 @@
 {
-  "locale": "en-US",
+  "locale": "en",
   "translations": {
+    "ANGULAR_APP_SELECTLANGUAGE": "Select Language:",
     "ANGULAR_APP_PERSONDETAILS": "Person Details",
     "ANGULAR_APP_FULLNAME": "Full Name:",
     "ANGULAR_APP_JOHNDOE": " John Doe",

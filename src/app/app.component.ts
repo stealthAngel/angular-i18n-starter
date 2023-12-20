@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
-import { Inject, LOCALE_ID } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { LanguageService } from './servies/language.service';
+import { LanguageService } from './services/language/language.service';
+import { defaultLanguage } from './services/language/languages';
 
 @Component({
   selector: 'app-root',
@@ -14,16 +14,17 @@ import { LanguageService } from './servies/language.service';
 })
 export class AppComponent implements OnInit {
   title: string = '';
-  selectedLanguage: string = 'en';
+  selectedLanguage: string = defaultLanguage;
 
   constructor(private languageService: LanguageService) {}
 
   ngOnInit(): void {
-    this.languageService.selectedLanguage$.subscribe((language) => {
-      this.selectedLanguage = language;
-    });
-
+    this.selectedLanguage = this.languageService.getCurrentLanguage();
     const name = 'John Doe';
     this.title = $localize`:@@ANGULAR_APP_PERSONDETAILS:person details ${name}`;
+  }
+
+  onLanguageChange(countryCode: string) {
+    this.languageService.setCurrentLanguage(countryCode);
   }
 }

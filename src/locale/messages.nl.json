@@ -1,6 +1,7 @@
 {
   "locale": "nl",
   "translations": {
+    "ANGULAR_APP_SELECTLANGUAGE": "Kies taal:",
     "ANGULAR_APP_PERSONDETAILS": "Persoonlijke Gegevens",
     "ANGULAR_APP_FULLNAME": "Volledige Naam:",
     "ANGULAR_APP_JOHNDOE": " Jan Jansen",

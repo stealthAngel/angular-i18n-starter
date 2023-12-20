@@ -1,11 +1,14 @@
-<div>
-  <label for="language-select">Select Language:</label>
-  <select id="language-select" [(ngModel)]="selectedLanguage">
+<div class="form-group">
+  <label for="language-select" class="form-label" i18n="@@ANGULAR_APP_SELECTLANGUAGE">Select Language:</label>
+  <select id="language-select" class="form-select custom-select" [(ngModel)]="selectedLanguage"
+    (ngModelChange)="onLanguageChange($event)">
     <option value="en">English</option>
     <option value="nl">Dutch</option>
     <option value="es">Spanish</option>
   </select>
 </div>
+
+
 
 <div class="card">
   <h1>{{title}}</h1>

@@ -1,6 +1,7 @@
 {
   "locale": "es",
   "translations": {
+    "ANGULAR_APP_SELECTLANGUAGE": "Seleccionar Idioma:",
     "ANGULAR_APP_PERSONDETAILS": "Detalles Personales",
     "ANGULAR_APP_FULLNAME": "Nombre Completo:",
     "ANGULAR_APP_JOHNDOE": " Juan Pérez",
